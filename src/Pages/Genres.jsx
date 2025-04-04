@@ -57,8 +57,8 @@ function Genres() {
       <div className="text-center">
         <h1 className="font-bold text-3xl md:text-4xl mt-6 mb-4 text-green-700">Movie Genres</h1>
         <p className="ml-3 mt-3 text-gray-600">Explore movies by genre</p>
-      </div>
-      
+             </div>
+
       <div className="flex flex-wrap justify-center gap-2 mt-6 mb-8">
         {genres.map((genre) => (
           <button
@@ -77,7 +77,7 @@ function Genres() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {movies.map((movie) => (
-          <CardContents
+                     <CardContents 
             key={movie.id}
             title={movie.title}
             poster={movie.poster}
