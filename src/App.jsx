@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Nav from "./Component/TailwindNavBarPractise";
 import Body from "./Component/TailWindMainSection";
 import Booter from "./Component/TailWindFooterPractise";
-import Genres from "./Pages/genres.jsx";
-import Trending from "./Pages/Trending.jsx";
+// import Genres from "./Pages/Genres";
+import Trending from "./Pages/Trending";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Body />} />
           <Route path="/trending" element={<Trending />} />
-          <Route path="/genres" element={<Genres />} />
+          {/* <Route path="/genres" element={<Genres />} /> */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Booter />
